@@ -21,7 +21,7 @@ public class ItemForbiddenFruit extends Item {
 	public ItemForbiddenFruit(String name, boolean good) {
 		
 		this.setMaxStackSize(1);
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(name);
 		this.good = good;
 		this.setCreativeTab(FoodExpansion.tabFoodExpansion);

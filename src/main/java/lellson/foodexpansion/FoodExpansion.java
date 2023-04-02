@@ -57,7 +57,7 @@ public class FoodExpansion {
 		FMLCommonHandler.instance().bus().register(instance);
 		
 		MinecraftForge.EVENT_BUS.register(new DropHandler());
-		MinecraftForge.EVENT_BUS.register(new ItemEventHandler());
+//		MinecraftForge.EVENT_BUS.register(new ItemEventHandler());
 		
 		proxy.registerRenders();
 	}
@@ -68,9 +68,9 @@ public class FoodExpansion {
 	}
 		
 	public static CreativeTabs tabFoodExpansion = new CreativeTabs("tabFoodExpansion") {
-		
+
 		@Override
-		public ItemStack getTabIconItem() {
+		public ItemStack createIcon() {
 			return new ItemStack(FoodItems.itemChocolateBar);
 		}
 	};

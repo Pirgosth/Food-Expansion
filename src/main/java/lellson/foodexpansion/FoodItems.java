@@ -88,7 +88,7 @@ public class FoodItems {
 		itemBlazeCream = new ItemFoodBasic("itemBlazeCream", 4, 0.4F, false, new PotionEffect[]{new PotionEffect(MobEffects.FIRE_RESISTANCE, 300, 0)}, bowl, 32);
 		itemMelonSalad = new ItemFoodBasic("itemMelonSalad", 6, 0.6F, false, bowl);
 		itemRoastedSeed = new ItemFoodBasic("itemRoastedSeed", 1, 0.1F);
-		itemDough = new Item().setUnlocalizedName("itemDough").setRegistryName("itemDough");
+		itemDough = new Item().setTranslationKey("itemDough").setRegistryName("itemDough");
 		ITEM_LIST.add(itemDough);
 		itemWolfMeat = new ItemFoodBasic("itemWolfMeat", 2, 0.3F, true);
 		itemCookedWolfMeat = new ItemFoodBasic("itemCookedWolfMeat", 6, 0.7F, true);

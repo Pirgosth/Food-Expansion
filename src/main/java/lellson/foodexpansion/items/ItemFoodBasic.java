@@ -24,7 +24,7 @@ public class ItemFoodBasic extends ItemFood {
 	public ItemFoodBasic(String name, int foodAmount, float saturation, boolean wolfFav, PotionEffect[] effects, int probability, ItemStack returnItem, int useDuration) {
 		super(foodAmount, saturation, wolfFav);
 		
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(name);
 		
 		if (effects.length != 0 && !name.equals("ItemBatWing") && !name.equals("ItemCookedBatWing"))
